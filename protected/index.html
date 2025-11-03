@@ -20,6 +20,8 @@
     img{max-width:100%;border-radius:12px}
     .footer{color:#777;font-size:13px;margin:24px 0;text-align:center}
     ul{padding-left:1.1em}
+    .steps li{margin:6px 0}
+    .warn{background:#fff3f3;border:1px solid #ffd2d2;padding:10px;border-radius:12px}
   </style>
   <script>
     if(sessionStorage.getItem("guest_ok")!=="1"){
@@ -33,6 +35,7 @@
       <strong>Fitaire in Naruto</strong>
       <a href="#access">道順・アクセス</a>
       <a href="#parking">駐車場</a>
+      <a href="#checkin">チェックイン方法</a>
       <a href="#rules">ハウスルール</a>
       <a href="#around">周辺情報</a>
       <a href="#contact">連絡先</a>
@@ -90,6 +93,30 @@
           <img src="./assets/parking-no.jpg" alt="駐車禁止エリア（赤い枠内：ガレージ前）">
           <figcaption class="muted" style="margin-top:6px;">駐車禁止エリア（ガレージ前）</figcaption>
         </figure>
+      </div>
+    </section>
+
+    <!-- ==================== チェックイン方法 ==================== -->
+    <section id="checkin" class="card">
+      <h2>チェックイン方法（テンキー式スマートロック）</h2>
+      <div class="grid grid-cols-2">
+        <div>
+          <ol class="steps">
+            <li>外玄関ドア横の<strong>テンキー式スマートロック（キーパッド）</strong>をご確認ください。</li>
+            <li>前日にお送りする<strong>6桁の暗証番号</strong>を入力します。</li>
+            <li>入力後、<strong>✓（チェック）マーク</strong>を押すと解錠します。</li>
+          </ol>
+          <ul>
+            <li>外玄関と<strong>内玄関は連動</strong>しています。外玄関が解錠されると内玄関も解錠されます。</li>
+            <li><strong>2分で自動施錠</strong>されます。お出かけの際は施錠をご確認ください。</li>
+          </ul>
+          <p class="warn"><strong>開かない／機器トラブル時：</strong>ホストまでご連絡ください。<br>
+            TEL：<a href="tel:08053128677">080-5312-8677</a></p>
+        </div>
+        <div>
+          <!-- キーパッドの写真をアップして差し替え -->
+          <img src="./assets/checkin-keypad.jpg" alt="テンキー式スマートロック（キーパッド）外観">
+        </div>
       </div>
     </section>
 
@@ -154,7 +181,7 @@
     <!-- ==================== 連絡先 ==================== -->
     <section id="contact" class="card">
       <h2>緊急連絡先</h2>
-      <p>ホスト：<a href="tel:">（電話番号を入力）</a><br>タクシー：鳴門第一タクシー 088-685-5555</p>
+      <p>ホスト：<a href="tel:08053128677">080-5312-8677</a><br>タクシー：鳴門第一タクシー 088-685-5555</p>
     </section>
 
     <p class="footer">© Fitaire in Naruto</p>
