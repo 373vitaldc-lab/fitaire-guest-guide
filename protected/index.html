@@ -7,9 +7,9 @@
   <style>
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#fcfcfd;color:#111}
     .container{max-width:980px;margin:24px auto;padding:0 16px}
-    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee}
-    nav{max-width:980px;margin:0 auto;display:flex;gap:12px;align-items:center;padding:12px 16px}
-    nav a{padding:10px 12px;border-radius:10px;text-decoration:none;color:#111}
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:10}
+    nav{max-width:980px;margin:0 auto;display:flex;gap:12px;align-items:center;padding:12px 16px;overflow-x:auto}
+    nav a{padding:10px 12px;border-radius:10px;text-decoration:none;color:#111;white-space:nowrap}
     nav a:hover{background:#f2f2f3}
     h1{font-size:24px;margin:20px 0 8px}
     h2{font-size:18px;margin:20px 0 8px}
@@ -18,7 +18,7 @@
     @media(min-width:880px){ .grid-cols-2{grid-template-columns:1fr 1fr} }
     .muted{color:#666}
     img{max-width:100%;border-radius:12px}
-    .footer{color:#777;font-size:13px;margin:24px 0}
+    .footer{color:#777;font-size:13px;margin:24px 0;text-align:center}
     ul{padding-left:1.1em}
   </style>
   <script>
@@ -31,43 +31,121 @@
   <header>
     <nav>
       <strong>Fitaire in Naruto</strong>
+      <a href="#access">道順・アクセス</a>
       <a href="#rules">ハウスルール</a>
       <a href="#parking">駐車場</a>
-      <a href="#access">道順</a>
       <a href="#around">周辺情報</a>
       <a href="#contact">連絡先</a>
     </nav>
   </header>
+
   <div class="container">
     <h1>ようこそ、Fitaire in Naruto へ</h1>
     <p class="muted">このページはご宿泊者さま専用です。内容の無断転載はご遠慮ください。</p>
+
+    <!-- ==================== 道順・アクセス ==================== -->
+    <section id="access" class="card">
+      <h2>道順・アクセス方法</h2>
+      <p>
+        お車でお越しの際は、<strong>神戸淡路鳴門自動車道「鳴門北インター」または「鳴門インター」</strong>で下車し、約15分で到着します。<br>
+        目的地の目印は<strong>「鳴門第二中学校」</strong>です。学校を目標にお進みください。<br><br>
+        夜間は街灯が少なく、道が分かりにくい箇所があります。下記の写真を参考にお越しください。
+      </p>
+      <div class="grid grid-cols-2">
+        <div><img src="./assets/2025-11-03T00-56-18.788Z.png" alt="交差点の目印"></div>
+        <div><img src="./assets/2025-11-03T00-56-27.514Z.png" alt="細い道の入り口"></div>
+      </div>
+      <div style="margin-top:16px;">
+        <img src="./assets/2025-11-03T01-00-52.149Z.png" alt="建物外観（目的地）">
+      </div>
+      <p style="margin-top:10px;">※Googleマップで「徳島県鳴門市里浦町里浦字花面７０４−２」と検索しても到着します。</p>
+      <iframe
+        src="https://www.google.com/maps?q=徳島県鳴門市里浦町里浦字花面７０４−２&output=embed"
+        style="width:100%;height:300px;border:0;border-radius:12px"
+        allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- ==================== ハウスルール ==================== -->
     <section id="rules" class="card">
       <h2>🇯🇵 ハウスルール（Fitaire in Naruto）</h2>
       <p>ようこそ「Fitaire in Naruto」へ。快適で安心なご滞在のため、ご到着時にこのルールをご一読のうえ、内容をご承諾のうえご利用ください。</p>
+
       <h3>【1. チェックイン／チェックアウト】</h3>
-      <ul><li>チェックイン：15:00以降</li><li>チェックアウト：11:00まで</li></ul>
+      <ul>
+        <li>チェックイン：15:00以降</li>
+        <li>チェックアウト：11:00まで</li>
+      </ul>
+
       <h3>【2. 館内利用のお願い】</h3>
-      <ul><li>玄関に入られたら、靴を脱いでスリッパをご利用ください。</li><li>滞在中は、他のお客様・ご近隣の住民の方への配慮をお願いいたします。とくに22:00以降は音量を控えめにお願い致します。</li><li>客室・共有スペースの備品・家具・設備は大切にご使用ください。万一、破損・汚損された場合は実費をご請求させていただくことがあります。</li></ul>
+      <ul>
+        <li>玄関に入られたら、靴を脱いでスリッパをご利用ください。</li>
+        <li>滞在中は、他のお客様・ご近隣の住民の方への配慮をお願いいたします。とくに22:00以降は音量を控えめにお願い致します。</li>
+        <li>客室・共有スペースの備品・家具・設備は大切にご使用ください。万一、破損・汚損された場合は実費をご請求させていただくことがあります。</li>
+      </ul>
+
       <h3>【3. 禁止事項】</h3>
-      <ul><li>敷地内・お部屋内は全室禁煙です（ベランダを含みます）。</li><li>ペットの同伴・持ち込みは事前承認のない限りご遠慮ください。</li><li>宿泊登録者以外の入室・宿泊およびパーティー、イベント利用は禁止です。</li><li>宿泊人数を超えてのご利用は禁止です。予約時に申告された人数のみご利用ください。</li></ul>
+      <ul>
+        <li>敷地内・お部屋内は全室禁煙です（ベランダを含みます）。</li>
+        <li>ペットの同伴・持ち込みは事前承認のない限りご遠慮ください。</li>
+        <li>宿泊登録者以外の入室・宿泊およびパーティー、イベント利用は禁止です。</li>
+        <li>宿泊人数を超えてのご利用は禁止です。予約時に申告された人数のみご利用ください。</li>
+      </ul>
+
       <h3>【4. 設備・共有スペースのご利用】</h3>
-      <ul><li>キッチン・調理器具・食器などをご利用の際は、使用後に洗浄・元の位置へ片付けをお願いいたします。</li><li>ゴミは可燃・不燃・ペットボトル・缶・瓶に分別し、所定のゴミ箱へお出しください。</li><li>外出時・就寝時には、照明・エアコン・テレビ等の電源オフ／戸締まりをお願いいたします。</li></ul>
+      <ul>
+        <li>キッチン・調理器具・食器などをご利用の際は、使用後に洗浄・元の位置へ片付けをお願いいたします。</li>
+        <li>ゴミは可燃・不燃・ペットボトル・缶・瓶に分別し、所定のゴミ箱へお出しください。</li>
+        <li>外出時・就寝時には、照明・エアコン・テレビ等の電源オフ／戸締まりをお願いいたします。</li>
+      </ul>
+
       <h3>【5. 安全・防災・その他】</h3>
-      <ul><li>貴重品はお客様ご自身で管理をお願いします。紛失・盗難等の責任は負いかねます。</li><li>火災・地震などの緊急時には、備え付けの避難経路・消火器・一酸化炭素検知器をご確認ください。</li></ul>
+      <ul>
+        <li>貴重品はお客様ご自身で管理をお願いします。紛失・盗難等の責任は負いかねます。</li>
+        <li>火災・地震などの緊急時には、備え付けの避難経路・消火器・一酸化炭素検知器をご確認ください。</li>
+      </ul>
+
       <h3>【6. チェックアウト時のお願い】</h3>
-      <ul><li>チェックアウト前に、使用された食器・調理器具の洗浄・片付けをお願いいたします。</li><li>シーツ・布団カバー等を外していただく場合がございます。</li><li>チェックアウト時間（11:00）を過ぎますと、追加料金を請求させていただくことがあります。</li></ul>
+      <ul>
+        <li>チェックアウト前に、使用された食器・調理器具の洗浄・片付けをお願いいたします。</li>
+        <li>シーツ・布団カバー等を外していただく場合がございます。</li>
+        <li>チェックアウト時間（11:00）を過ぎますと、追加料金を請求させていただくことがあります。</li>
+      </ul>
     </section>
+
+    <!-- ==================== 駐車場 ==================== -->
     <section id="parking" class="card">
       <h2>駐車場の使い方</h2>
-      <div class="grid grid-cols-2"><div><p>指定区画に前向き駐車でお願いします。深夜・早朝の出入庫はお静かに。</p><ul><li>駐車可能台数：1台</li><li>枠線外駐車・路上駐車は厳禁</li></ul></div><div><img src="./assets/parking-map.jpg" alt="駐車位置図"></div></div>
+      <div class="grid grid-cols-2">
+        <div>
+          <p>指定区画に前向き駐車でお願いします。深夜・早朝の出入庫はお静かに。</p>
+          <ul>
+            <li>駐車可能台数：1台</li>
+            <li>枠線外駐車・路上駐車は厳禁</li>
+          </ul>
+        </div>
+        <div>
+          <img src="./assets/parking-map.jpg" alt="駐車位置図">
+        </div>
+      </div>
     </section>
-    <section id="access" class="card">
-      <h2>道順（住所：徳島県鳴門市里浦町里浦字花面７０４−２）</h2>
-      <p>下の地図をタップするとGoogleマップが開きます。最終右折ポイントの目印写真を掲載しています。</p>
-      <div class="grid grid-cols-2"><div><iframe src="https://www.google.com/maps?q=徳島県鳴門市里浦町里浦字花面７０４−２&output=embed" style="width:100%;height:300px;border:0;border-radius:12px" allowfullscreen="" loading="lazy"></iframe></div><div><img src="./assets/landmark-1.jpg" alt="最終右折の目印"></div></div>
+
+    <!-- ==================== 周辺案内 ==================== -->
+    <section id="around" class="card">
+      <h2>周辺案内（抜粋）</h2>
+      <ul>
+        <li>大塚国際美術館／鳴門公園・渦の道</li>
+        <li>阿波おどり会館／アスタムランド／祖谷のかずら橋</li>
+        <li>道の駅くるくるなると／産直あいさい／じゃのひれ（淡路）</li>
+        <li>飲食：リストランテ フィッシュボーン ほか</li>
+      </ul>
     </section>
-    <section id="around" class="card"><h2>周辺案内（抜粋）</h2><ul><li>大塚国際美術館／鳴門公園・渦の道</li><li>阿波おどり会館／アスタムランド／祖谷のかずら橋</li><li>道の駅くるくるなると／産直あいさい／じゃのひれ（淡路）</li><li>飲食：リストランテ フィッシュボーン ほか</li></ul></section>
-    <section id="contact" class="card"><h2>緊急連絡先</h2><p>ホスト：<a href="tel:">（電話番号を入力）</a><br>タクシー：鳴門第一タクシー 088-685-5555</p></section>
+
+    <!-- ==================== 緊急連絡先 ==================== -->
+    <section id="contact" class="card">
+      <h2>緊急連絡先</h2>
+      <p>ホスト：<a href="tel:">（電話番号を入力）</a><br>タクシー：鳴門第一タクシー 088-685-5555</p>
+    </section>
+
     <p class="footer">© Fitaire in Naruto</p>
   </div>
 </body>
