@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Fitaire in Naruto | Guest Guide</title>
+  <title>Fitaire in Naruto | ゲストガイド</title>
   <style>
     :root{
       --ink:#111;--muted:#666;--bg:#fcfcfd;--card:#fff;--line:#eee;--brand:#0b63f6;
@@ -33,10 +33,9 @@
     .small{font-size:.9rem;color:#666}
     .pill{display:inline-block;padding:.2rem .6rem;border:1px solid var(--line);border-radius:999px;font-size:.85rem;background:#fff}
     .list-tight li{margin:.35rem 0}
-    table{width:100%;border-collapse:collapse;border:1px solid var(--line);background:#fff;border-radius:12px;overflow:hidden}
-    th,td{border-bottom:1px solid var(--line);padding:10px;vertical-align:top}
-    th{background:#f9fbff;text-align:left;font-weight:600}
-    tr:last-child td{border-bottom:none}
+    .lang-switch{max-width:980px;margin:0 auto 4px;padding:0 16px 4px;font-size:13px;color:var(--muted)}
+    .lang-switch a{color:var(--brand);text-decoration:none;margin:0 4px}
+    .lang-switch a:hover{text-decoration:underline}
   </style>
   <script>
     if(sessionStorage.getItem("guest_ok")!=="1"){
@@ -54,11 +53,19 @@
       <a href="#rules">ハウスルール</a>
       <a href="#longstay">連泊の方へ</a>
       <a href="#weber">WEBERグリル</a>
-      <a href="#around">周辺情報</a>
-      <a href="#checkout">チェックアウト方法</a>
+      <a href="#around">周辺案内</a>
+      <a href="#checkout">チェックアウト</a>
       <a href="#contact">連絡先</a>
     </nav>
   </header>
+
+  <div class="lang-switch">
+    表示言語：
+    <a href="index.html"><strong>日本語</strong></a>｜
+    <a href="index_en.html">English</a>｜
+    <a href="index_zh.html">中文</a>｜
+    <a href="index_ko.html">한국어</a>
+  </div>
 
   <div class="container">
     <h1>ようこそ、Fitaire in Naruto へ</h1>
@@ -122,7 +129,7 @@
           </ol>
           <ul class="list-tight">
             <li>外玄関と<strong>内玄関は連動</strong>しています。外玄関が解錠されると内玄関も解錠されます。</li>
-            <li><strong>2分で自動施錠</strong>されます。お出かけの際は施錠をご確認ください。</li>
+            <li><strong>約2分で自動施錠</strong>されます。お出かけの際は施錠をご確認ください。</li>
           </ul>
           <p class="warn"><strong>開かない／機器トラブル時：</strong>ホストまでご連絡ください。TEL：<a href="tel:08053128677">080-5312-8677</a></p>
         </div>
@@ -151,7 +158,7 @@
 
       <h3 class="sub">【3. 禁止事項】</h3>
       <ul class="list-tight">
-        <li>敷地内・お部屋内は<strong>基本的に禁煙</strong>です（ベランダを含む）。</li>
+        <li>敷地内・お部屋内は<strong>原則禁煙</strong>です（ベランダを含む）。</li>
         <li class="note">喫煙は<strong>屋外のみ可</strong>です。火の始末を徹底し、携帯灰皿を使用してください。</li>
         <li>ペットの同伴・持ち込みは<strong>事前承認のない限りご遠慮ください。</strong></li>
         <li>宿泊登録者以外の入室・宿泊およびパーティー・イベント利用は禁止です。</li>
@@ -162,7 +169,7 @@
       <ul class="list-tight">
         <li>キッチン・調理器具・食器類は使用後に洗浄・片付けをお願いします。</li>
         <li>ゴミは<strong>可燃・不燃・ペットボトルをひとまとめ</strong>に、<strong>瓶と缶類のみ別途</strong>で分けて指定のゴミ箱へ。</li>
-        <li>外出時は<strong>照明・エアコン・テレビなどの電源をオフ</strong>にし、戸締まりをお願いします。</li>
+        <li>外出時は<strong>照明・エアコン・床暖房・テレビなどの電源をオフ</strong>にし、戸締まりをお願いします。</li>
       </ul>
 
       <h3 class="sub">【5. その他】</h3>
@@ -200,7 +207,7 @@
     <!-- ==================== WEBERグリル ==================== -->
     <section id="weber" class="card">
       <h2 class="section-title">WEBER Traveler ガスグリルの使い方</h2>
-      <p class="muted">グリルはすでに展開済みです。屋外でのみご使用ください。</p>
+      <p class="muted">グリルはすでに展開済みです。<strong>屋外でのみ</strong>ご使用ください。</p>
 
       <h3 class="sub">ガス缶の場所</h3>
       <p>ガス缶は室内の<strong>所定の収納場所</strong>にあります。使用時のみ屋外にお持ちください。</p>
@@ -213,10 +220,11 @@
         <li>屋外・換気の良い場所で使用し、使用中は移動しないでください。</li>
       </ul>
 
+      <!-- ①② -->
       <section class="card" style="margin:12px 0;">
         <div class="grid grid-cols-2">
           <div>
-            <h2 class="sub">① 事前準備（接続）</h2>
+            <h3 class="sub">① 事前準備（接続）</h3>
             <ol class="list-tight">
               <li>つまみが<strong>「OFF」</strong>、レギュレーターの弁が<strong>閉</strong>になっているか確認。</li>
               <li>ガス缶をレギュレーターに<strong>手でねじ込み</strong>装着（工具は使わない）。</li>
@@ -225,32 +233,33 @@
             <p class="small">※泡が出る＝漏れ。すぐに閉めて再接続し、改善しない場合は使用中止。</p>
           </div>
           <div>
-            <h2 class="sub">② 予熱</h2>
+            <h3 class="sub">② 予熱</h3>
             <ol class="list-tight">
               <li>フタを開けて点火（次章）。</li>
-              <li>フタを閉め、<strong>「High」</strong>で<strong>10–15分</strong>予熱（温度計が約260℃目安）。</li>
+              <li>フタを閉め、<strong>「High」</strong>で<strong>10〜15分</strong>予熱（温度計が約260℃目安）。</li>
               <li>予熱後、焼き網を<strong>ステンレスブラシ</strong>でさっと清掃。</li>
             </ol>
           </div>
         </div>
       </section>
 
+      <!-- ③④ -->
       <section class="card" style="margin:12px 0;">
         <div class="grid grid-cols-2">
           <div>
-            <h2 class="sub">③ 点火手順</h2>
+            <h3 class="sub">③ 点火手順</h3>
             <ol class="list-tight">
               <li>フタを<strong>開ける</strong>。</li>
               <li>つまみが<strong>「OFF」</strong>であることを確認。</li>
               <li>レギュレーターの弁を<strong>開</strong>に。</li>
               <li>つまみを<strong>押しながら反時計回り</strong>に回して<strong>「Start/High」</strong>へ。</li>
               <li><strong>赤い点火ボタン</strong>を数回押す（カチッ音）。</li>
-              <li>炎が見えない／5秒で点かない場合は<strong>OFF→5分換気→再試行</strong>。</li>
+              <li>炎が見えない／5秒で点かない場合は<strong>OFF → 5分換気 → 再試行</strong>。</li>
             </ol>
             <p class="small">※繰り返し不点火のときはマッチ点火手順またはトラブルシュートへ。</p>
           </div>
           <div>
-            <h2 class="sub">④ 消火・片付け</h2>
+            <h3 class="sub">④ 消火・片付け</h3>
             <ol class="list-tight">
               <li>つまみを<strong>「OFF」</strong>へ。</li>
               <li>レギュレーターの弁を<strong>閉</strong>に。</li>
@@ -272,100 +281,88 @@
 
     <!-- ==================== 周辺案内 ==================== -->
     <section id="around" class="card">
-      <h2 class="section-title">🏖️ 鳴門エリア観光スポット・グルメ紹介マニュアル</h2>
+      <h2 class="section-title">周辺案内（鳴門エリア観光・グルメ）</h2>
 
-      <h3 class="sub">🚗 1. 主な観光スポット</h3>
-      <table>
-        <thead><tr><th>スポット名</th><th>所要時間（車）</th><th>特徴・おすすめポイント</th></tr></thead>
-        <tbody>
-          <tr><td>鳴門の渦潮（大鳴門橋）</td><td>約10分</td><td>世界最大級の渦潮。遊覧船「うずしお観潮船」が人気。</td></tr>
-          <tr><td>大塚国際美術館</td><td>約15分</td><td>陶板名画で有名。全天候型の世界的美術館。</td></tr>
-          <tr><td>鳴門公園・エディ観光物産館</td><td>約10分</td><td>展望台からの絶景とお土産が充実。</td></tr>
-          <tr><td>鳴門ウチノ海総合公園</td><td>約8分</td><td>芝生と遊具があり、ファミリーに人気。</td></tr>
-          <tr><td>道の駅うずしお</td><td>約20分</td><td>絶景＆ご当地バーガーが名物。</td></tr>
-          <tr><td>阿波おどり会館（徳島市）</td><td>約40分</td><td>通年で阿波踊り体験ができる。夜の公演もおすすめ。</td></tr>
-          <tr><td>あすたむらんど徳島</td><td>約45分</td><td>科学体験型テーマパーク。子ども連れに人気。</td></tr>
-          <tr><td>祖谷のかずら橋</td><td>約1時間50分</td><td>伝統的な吊り橋。スリル満点の名所。</td></tr>
-          <tr><td>くるくるなると</td><td>約12分</td><td>地元特産・野菜・おみやげが揃う道の駅。</td></tr>
-          <tr><td>あいさい広場（藍住町）</td><td>約35分</td><td>徳島最大級の産直市。新鮮野菜と特産品が人気。</td></tr>
-          <tr><td>じゃのひれアウトドアリゾート（淡路島）</td><td>約50分</td><td>釣り体験やイルカふれあいができるリゾート。</td></tr>
-        </tbody>
-      </table>
-
-      <h3 class="sub">🍜 2. グルメスポット</h3>
-      <table>
-        <thead><tr><th>店名</th><th>所要時間（車）</th><th>ジャンル／特徴</th></tr></thead>
-        <tbody>
-          <tr><td>びんび家</td><td>約10分</td><td>鳴門の海鮮丼の代名詞。行列必至。</td></tr>
-          <tr><td>うずの丘レストラン</td><td>約20分</td><td>絶景×淡路島玉ねぎバーガー。</td></tr>
-          <tr><td>鳴門地方卸売市場（市場食堂）</td><td>約8分</td><td>朝食にもおすすめの海鮮市場。</td></tr>
-          <tr><td>喫茶あぽろ</td><td>約7分</td><td>手作りスコーンが名物のレトロ喫茶。</td></tr>
-          <tr><td>うな哲</td><td>約10分</td><td>鳴門で評判のうなぎ専門店。</td></tr>
-          <tr><td>堂の浦 鳴門本店</td><td>約10分</td><td>鯛だしラーメンが人気。俳優・目黒蓮さんも来店。</td></tr>
-          <tr><td>あらし</td><td>約12分</td><td>地元人気の定食・丼メニューが豊富。</td></tr>
-          <tr><td>上海料理 富々樓（ふふろう）</td><td>約10分</td><td>本格中華料理。地元でも評判の味。</td></tr>
-          <tr><td>すし勝</td><td>約10分</td><td>鳴門屈指の寿司店。予約必須。</td></tr>
-          <tr><td>三八ラーメン</td><td>各店舗あり</td><td>徳島ラーメンの定番人気チェーン。</td></tr>
-          <tr><td>リストランテ フィッシュボーン</td><td>約15分</td><td>鳴門の海を望む本格イタリアン。記念日やランチにも人気。</td></tr>
-        </tbody>
-      </table>
-
-      <h3 class="sub">🚙 3. 交通・移動手段</h3>
+      <h3 class="sub">🚗 １. 主な観光スポット</h3>
       <ul class="list-tight">
-        <li>レンタカー：鳴門駅・徳島空港に営業所あり（トヨタ・日産・ニコニコ等）</li>
+        <li><strong>鳴門の渦潮（大鳴門橋）</strong>／車で約10分：世界最大級の渦潮。遊覧船「うずしお観潮船」が人気です。</li>
+        <li><strong>大塚国際美術館</strong>／約15分：陶板名画で有名な、全天候型の世界的美術館です。</li>
+        <li><strong>鳴門公園・エディ観光物産館</strong>／約10分：展望台からの絶景と、お土産が充実しています。</li>
+        <li><strong>鳴門ウチノ海総合公園</strong>／約8分：芝生と遊具があり、ファミリーに人気の公園です。</li>
+        <li><strong>道の駅うずしお</strong>／約20分：絶景スポット。ご当地バーガーも名物です。</li>
+        <li><strong>阿波おどり会館（徳島市）</strong>／約40分：一年を通して阿波おどり体験ができます。夜の公演もおすすめです。</li>
+        <li><strong>あすたむらんど徳島</strong>／約45分：科学体験型テーマパーク。お子さま連れに人気です。</li>
+        <li><strong>祖谷のかずら橋</strong>／約1時間50分：伝統的なかずら橋。スリル満点の名所です。</li>
+        <li><strong>くるくるなると</strong>／約12分：地元特産・野菜・おみやげが揃う道の駅です。</li>
+        <li><strong>あいさい広場（藍住町）</strong>／約35分：徳島最大級の産直市。新鮮野菜と特産品が人気です。</li>
+        <li><strong>じゃのひれアウトドアリゾート（淡路島）</strong>／約50分：釣り体験やイルカふれあいができるアウトドアリゾートです。</li>
       </ul>
 
-      <h3 class="sub">🛍️ 4. お土産おすすめ</h3>
+      <h3 class="sub">🍜 ２. グルメスポット</h3>
       <ul class="list-tight">
-        <li>鳴門金時スイーツ（栗尾商店など）</li>
-        <li>鳴門わかめ（地元産）</li>
-        <li>大谷焼（陶芸体験も可能）</li>
-        <li>鳴門鯛・すだち製品</li>
-        <li>ことらや（鳴門金時やわかめを使った銘菓が人気）</li>
+        <li><strong>びんび家</strong>／約10分：鳴門の海鮮丼の代名詞。行列必至の人気店です。</li>
+        <li><strong>うずの丘レストラン</strong>／約20分：絶景×淡路島玉ねぎバーガーが名物。</li>
+        <li><strong>鳴門地方卸売市場（市場食堂）</strong>／約8分：朝食にもおすすめの海鮮市場食堂。</li>
+        <li><strong>喫茶あぽろ</strong>／約7分：手作りスコーンが名物のレトロ喫茶。</li>
+        <li><strong>うな哲</strong>／約10分：鳴門で評判のうなぎ専門店。</li>
+        <li><strong>堂の浦 鳴門本店</strong>／約10分：鯛だしラーメンが人気。俳優・目黒蓮さんも来店したお店です。</li>
+        <li><strong>あらし</strong>／約12分：地元で人気の定食・丼メニューが豊富なお店。</li>
+        <li><strong>上海料理 富々樓（ふふろう）</strong>／約10分：本格中華料理。地元でも評判の味です。</li>
+        <li><strong>すし勝</strong>／約10分：鳴門屈指の寿司店。予約必須です。</li>
+        <li><strong>三八ラーメン</strong>／各店舗あり：徳島ラーメンの定番人気チェーン。</li>
+        <li><strong>リストランテ フィッシュボーン</strong>／約15分：鳴門の海を望む本格イタリアン。記念日やランチにも人気です。</li>
       </ul>
 
-      <h3 class="sub">🌸 5. 季節のイベント</h3>
-      <table>
-        <thead><tr><th>時期</th><th>イベント名</th><th>内容</th></tr></thead>
-        <tbody>
-          <tr><td>春（3〜5月）</td><td>渦潮の見頃</td><td>春は潮の勢いが最も強く、迫力満点。</td></tr>
-          <tr><td>夏（7〜8月）</td><td>鳴門市納涼花火大会</td><td>ウチノ海で開催される夏の風物詩。</td></tr>
-          <tr><td>秋（9〜11月）</td><td>鳴門金時収穫体験</td><td>農園での収穫体験が可能。</td></tr>
-          <tr><td>冬（12〜2月）</td><td>渦の道イルミネーション</td><td>大鳴門橋周辺が幻想的にライトアップ。</td></tr>
-        </tbody>
-      </table>
+      <h3 class="sub">🚙 ３. 交通・移動手段</h3>
+      <ul class="list-tight">
+        <li>レンタカー：<strong>鳴門駅・徳島空港</strong>に営業所あり（トヨタ・日産・ニコニコレンタカー等）。</li>
+        <li>タクシー：<strong>鳴門第一タクシー（☎ 088-685-5555）</strong></li>
+      </ul>
 
-      <h3 class="sub">💬 6. 宿からのひとこと</h3>
-      <p>鳴門は自然・芸術・グルメが楽しめる魅力あふれる町です。滞在中はぜひ、のんびりと時間を楽しみながらお気に入りの場所を見つけてください。</p>
+      <h3 class="sub">🛍️ ４. お土産おすすめ</h3>
+      <ul class="list-tight">
+        <li><strong>鳴門金時スイーツ</strong>（栗尾商店など）</li>
+        <li><strong>鳴門わかめ</strong>（地元産）</li>
+        <li><strong>大谷焼</strong>（陶芸体験も可能）</li>
+        <li><strong>鳴門鯛・すだち製品</strong></li>
+        <li><strong>ことらや</strong>（鳴門金時やわかめを使った銘菓が人気）</li>
+      </ul>
+
+      <h3 class="sub">🌸 ５. 季節のイベント</h3>
+      <ul class="list-tight">
+        <li><strong>春（3〜5月）</strong>：渦潮の見頃。特に春は潮の勢いが強く、迫力があります。</li>
+        <li><strong>夏（7〜8月）</strong>：鳴門市納涼花火大会（ウチノ海で開催される夏の風物詩）。</li>
+        <li><strong>秋（9〜11月）</strong>：鳴門金時の収穫体験ができる農園もあります。</li>
+        <li><strong>冬（12〜2月）</strong>：渦の道周辺や大鳴門橋付近のイルミネーションが幻想的です。</li>
+      </ul>
+
+      <h3 class="sub">💬 ６. 宿からのひとこと</h3>
+      <p>鳴門は自然・芸術・グルメが楽しめる、魅力あふれる町です。滞在中はぜひ、のんびりと時間を楽しみながら、お気に入りの場所を見つけていただければ嬉しいです。</p>
 
       <h3 class="sub">📱 便利リンク集</h3>
       <ul class="list-tight">
         <li><a href="https://maps.google.com" target="_blank" rel="noopener">Googleマップでナビ</a></li>
         <li><a href="https://www.naruto-kankou.jp/" target="_blank" rel="noopener">鳴門市観光協会</a></li>
-        <li><a href="https://discovertokushima.net/" target="_blank" rel="noopener">徳島観光ナビ</a></li>
+        <li><a href="https://discovertokushima.net/" target="_blank" rel="noopener">徳島観光ナビ（Discover Tokushima）</a></li>
       </ul>
     </section>
 
-    <!-- ==================== チェックアウト方法 ==================== -->
+    <!-- ==================== チェックアウト ==================== -->
     <section id="checkout" class="card">
-      <h2 class="section-title">チェックアウト方法</h2>
-      <p class="pill">チェックアウトは <strong>11:00</strong> までです。過ぎる場合は<strong>追加料金</strong>を頂くことがあります。</p>
-
-      <h3 class="sub">ご出発前チェックリスト</h3>
+      <h2 class="section-title">チェックアウトのご案内</h2>
       <ul class="list-tight">
-        <li><strong>グリルの片付け：</strong>火を完全に消し、十分に冷却後、焼き網を軽くブラシ清掃。<br>
-            ガス缶はレギュレーターから<strong>外し</strong>、キャップを閉めて<strong>室内の所定の収納</strong>へ戻してください。</li>
-        <li><strong>使用した食器・調理器具：</strong>洗って乾かし、元の位置へ戻す。</li>
-        <li><strong>ゴミ：</strong>館内ルールに沿って分別。いっぱいになった袋は<strong>口を固く縛って屋外の指定ゴミ箱内へ</strong>。</li>
-        <li><strong>家電の電源：</strong>照明・テレビ・キッチン家電をオフ。</li>
-        <li><strong>空調：</strong>エアコン・床暖房をオフ。</li>
-        <li><strong>水回り：</strong>蛇口の閉め忘れがないか確認。</li>
-        <li><strong>窓・扉：</strong>全て施錠し、外玄関のスマートロックが<strong>施錠状態</strong>か最終確認。</li>
-        <li><strong>貴重品・お忘れ物：</strong>ベッド下・引き出し・洗面台・冷蔵庫内をチェック。</li>
-        <li><strong>駐車場：</strong>車内の忘れ物と枠内駐車の痕跡（液体漏れ等）がないか簡易確認。</li>
+        <li>チェックアウト時刻は<strong>11:00</strong>です。時間を過ぎた場合は、追加料金を請求させていただく場合があります。</li>
+        <li><strong>WEBERグリル</strong>をご使用になった場合：
+          <ul class="list-tight">
+            <li>焼き網の焦げや食べかすをブラシで軽く落とし、ドリップパン（受け皿）の油汚れを確認・処理してください。</li>
+            <li>レギュレーターの弁を<strong>閉じて</strong>からガス缶を外し、室内の所定の位置へお戻しください。</li>
+          </ul>
+        </li>
+        <li>使用された<strong>食器・カトラリー・調理器具</strong>は洗浄し、元の場所にお戻しください。</li>
+        <li><strong>エアコン・床暖房・照明・テレビなどの電源</strong>をすべてお切りください。</li>
+        <li>お出かけ・ご退室前に、<strong>すべての窓とドアが閉まり、施錠されているか</strong>ご確認ください。</li>
       </ul>
-
-      <p class="note">チェックアウト後に清掃チームが入室します。気になる点があれば、お手数ですがホストまでお知らせください。</p>
+      <p class="muted">ご退室前に大きな破損や不具合にお気づきの場合は、可能な範囲でホストまでお知らせいただけますと、次にお泊まりになるお客様の準備に大変助かります。</p>
     </section>
 
     <!-- ==================== 連絡先 ==================== -->
