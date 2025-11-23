@@ -23,6 +23,7 @@
     .steps li{margin:6px 0}
     .warn{background:#fff3f3;border:1px solid #ffd2d2;padding:10px;border-radius:12px}
     .note{background:#f7f9ff;border:1px solid #e3e9ff;padding:10px;border-radius:12px}
+    .small{font-size:.9rem;color:#666}
   </style>
   <script>
     if(sessionStorage.getItem("guest_ok")!=="1"){
@@ -138,7 +139,9 @@
       <ul>
         <li>敷地内・お部屋内は<strong>基本的に禁煙</strong>です（ベランダを含む）。</li>
         <li class="note">喫煙は<strong>屋外のみ可</strong>です。火の始末を徹底し、携帯灰皿を使用してください。</li>
+        <li>ペットの同伴・持ち込みは<strong>事前承認のない限りご遠慮ください。</strong></li>
         <li>宿泊登録者以外の入室・宿泊およびパーティー・イベント利用は禁止です。</li>
+        <li><strong>宿泊人数を超えてのご利用は禁止</strong>です。予約時に申告された人数のみご利用ください。</li>
       </ul>
 
       <h3>【4. 設備・共有スペースのご利用】</h3>
@@ -196,26 +199,62 @@
         <li>屋外・換気の良い場所で使用し、使用中は移動しないでください。</li>
       </ul>
 
-      <h3>点火と使用</h3>
-      <ol class="steps">
-        <li>レギュレーターの弁を「開」にする。</li>
-        <li>つまみを押しながら反時計回りに回し「Start/High」に合わせる。</li>
-        <li>点火ボタンを押して火をつける。火がつかない場合は5分ほど換気して再試行。</li>
-        <li>フタを閉じて「High」で10〜15分予熱し、その後調理を開始。</li>
-      </ol>
+      <!-- ③ ④ -->
+      <section class="card" style="margin:12px 0;">
+        <div class="grid grid-cols-2">
+          <div>
+            <h2>③ 事前準備（接続）</h2>
+            <ol>
+              <li>つまみが<strong>「OFF」</strong>、レギュレーターの弁が<strong>閉</strong>になっているか確認。</li>
+              <li>ガス缶をレギュレーターに<strong>手でねじ込み</strong>装着（工具は使わない）。</li>
+              <li>レギュレーターの弁を<strong>開</strong>にして、<strong>接続部に石けん水を塗布</strong>し、泡の発生がないか確認。</li>
+            </ol>
+            <p class="small">※泡が出る＝漏れ。すぐに閉めて再接続し、改善しない場合は使用中止。</p>
+          </div>
+          <div>
+            <h2>④ 予熱</h2>
+            <ol>
+              <li>フタを開けて点火（次章）。</li>
+              <li>フタを閉め、<strong>「High」</strong>で<strong>10–15分</strong>予熱（温度計が約260℃目安）。</li>
+              <li>予熱後、焼き網を<strong>ステンレスブラシ</strong>でさっと清掃。</li>
+            </ol>
+          </div>
+        </div>
+      </section>
 
-      <h3>消火</h3>
-      <ol class="steps">
-        <li>つまみを「OFF」にする。</li>
-        <li>レギュレーターの弁を閉にする。</li>
-        <li>完全に冷めてからドリップパンを確認し、必要に応じて油を捨ててください。</li>
-      </ol>
+      <!-- ⑤ ⑥ -->
+      <section class="card" style="margin:12px 0;">
+        <div class="grid grid-cols-2">
+          <div>
+            <h2>⑤ 点火手順</h2>
+            <ol>
+              <li>フタを<strong>開ける</strong>。</li>
+              <li>つまみが<strong>「OFF」</strong>であることを確認。</li>
+              <li>レギュレーターの弁を<strong>開</strong>に。</li>
+              <li>つまみを<strong>押しながら反時計回り</strong>に回して<strong>「Start/High」</strong>へ。</li>
+              <li><strong>赤い点火ボタン</strong>を数回押す（カチッ音）。</li>
+              <li>炎が見えない／5秒で点かない場合は<strong>OFF→5分換気→再試行</strong>。</li>
+            </ol>
+            <p class="small">※繰り返し不点火のときはマッチ点火手順またはトラブルシュートへ。</p>
+          </div>
+          <div>
+            <h2>⑥ 消火・片付け</h2>
+            <ol>
+              <li>つまみを<strong>「OFF」</strong>へ。</li>
+              <li>レギュレーターの弁を<strong>閉</strong>に。</li>
+              <li>完全に冷めてから、<strong>ドリップパンの油量を確認・交換</strong>。</li>
+              <li>長期保管や移動時は<strong>ガス缶を外す</strong>（屋外保管）。</li>
+            </ol>
+          </div>
+        </div>
+      </section>
 
       <h3>お手入れ</h3>
-      <p>お手入れはこれだけでOKです。<strong>焼き網は加熱後にブラシで軽くこすり、ドリップパンの油を確認してください。</strong></p>
+      <p><strong>焼き網は加熱後にブラシで軽くこすり、ドリップパンの油を確認</strong>してください。</p>
 
       <p class="note">
-        📄 <a href="/mnt/data/76638_Traveler-取扱説明書.pdf" target="_blank">WEBER Traveler 取扱説明書（PDFを開く）</a>
+        📄 詳細は公式取扱説明書をご確認ください：<br>
+        <a href="https://content-images.weber.com/downloads/User-Guides/Owners/76638_Traveler-%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8.pdf" target="_blank" rel="noopener">WEBER Traveler 取扱説明書（PDF）</a>
       </p>
     </section>
 
