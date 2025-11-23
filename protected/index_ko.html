@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fitaire in Naruto | 게스트 가이드 (KO)</title>
+  <style>
+    :root{
+      --ink:#111;--muted:#666;--bg:#fcfcfd;--card:#fff;--line:#eee;--brand:#0b63f6;
+    }
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans KR",sans-serif;margin:0;background:var(--bg);color:var(--ink)}
+    .container{max-width:980px;margin:24px auto;padding:0 16px}
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:10}
+    nav{max-width:980px;margin:0 auto;display:flex;gap:12px;align-items:center;padding:12px 16px;overflow-x:auto}
+    nav a{padding:10px 12px;border-radius:10px;text-decoration:none;color:var(--ink);white-space:nowrap}
+    nav a:hover{background:#f2f2f3}
+    h1{font-size:26px;margin:20px 0 8px}
+    h2.section-title{
+      font-size:20px;margin:6px 0 12px;padding:10px 12px;border-left:4px solid var(--brand);
+      background:#f5f8ff;border-radius:10px;
+    }
+    h3.sub{font-size:16px;margin:16px 0 8px;color:#0f172a}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:16px 0;box-shadow:0 6px 20px rgba(0,0,0,.04)}
+    .grid{display:grid;gap:16px}
+    @media(min-width:880px){ .grid-cols-2{grid-template-columns:1fr 1fr} .grid-cols-3{grid-template-columns:1fr 1fr 1fr}}
+    .muted{color:var(--muted)}
+    img{max-width:100%;border-radius:12px}
+    .footer{color:#777;font-size:13px;margin:24px 0;text-align:center}
+    ul{padding-left:1.1em}
+    .steps li{margin:6px 0}
+    .warn{background:#fff3f3;border:1px solid #ffd2d2;padding:10px;border-radius:12px}
+    .note{background:#f7f9ff;border:1px solid #e3e9ff;padding:10px;border-radius:12px}
+    .small{font-size:.9rem;color:#666}
+    .pill{display:inline-block;padding:.2rem .6rem;border:1px solid var(--line);border-radius:999px;font-size:.85rem;background:#fff}
+    .list-tight li{margin:.35rem 0}
+    .lang-switch{max-width:980px;margin:0 auto 4px;padding:0 16px 4px;font-size:13px;color:var(--muted)}
+    .lang-switch a{color:var(--brand);text-decoration:none;margin:0 4px}
+    .lang-switch a:hover{text-decoration:underline}
+  </style>
+  <script>
+    if(sessionStorage.getItem("guest_ok")!=="1"){
+      location.replace("../index.html");
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <strong>Fitaire in Naruto</strong>
+      <a href="#access">오시는 길</a>
+      <a href="#parking">주차 안내</a>
+      <a href="#checkin">체크인</a>
+      <a href="#rules">하우스 룰</a>
+      <a href="#longstay">장기 투숙 안내</a>
+      <a href="#weber">WEBER 그릴</a>
+      <a href="#around">주변 정보</a>
+      <a href="#checkout">체크아웃</a>
+      <a href="#contact">연락처</a>
+    </nav>
+  </header>
+  <div class="lang-switch">
+    Language:
+    <a href="index.html">日本語</a>｜
+    <a href="index_en.html">English</a>｜
+    <a href="index_zh.html">中文</a>｜
+    <a href="index_ko.html"><strong>한국어</strong></a>
+  </div>
+
+  <div class="container">
+    <h1>Fitaire in Naruto 에 오신 것을 환영합니다</h1>
+    <p class="muted">이 페이지는 투숙객 전용 안내입니다. 온라인 등에 무단 게시·공유는 삼가 주세요.</p>
+
+    <!-- ==================== Access ==================== -->
+    <section id="access" class="card">
+      <h2 class="section-title">오시는 길·교통 안내</h2>
+      <p>
+        자가용 이용 시, <strong>고베–아와지–나루토 자동차도로의 「나루토키타 IC」 또는 「나루토 IC」</strong>에서 내려 약 <strong>15분</strong> 정도 소요됩니다.<br>
+        목적지 주변의 큰 랜드마크는 <strong>「나루토 제2중학교」</strong>입니다. 학교 방향을 기준으로 이동해 주세요.<br><br>
+        <strong>밤에는 가로등이 적어</strong> 길이 어두운 구간이 있습니다. 아래 사진을 참고하시면서 찾아오시면 더 편리합니다.
+      </p>
+
+      <div class="grid grid-cols-3">
+        <img src="./assets/access-1.jpg" alt="교차로 랜드마크">
+        <img src="./assets/access-2.jpg" alt="좁은 골목 입구">
+        <img src="./assets/access-3.jpg" alt="추가 안내 지점">
+      </div>
+      <div style="margin-top:16px;">
+        <img src="./assets/access-4.jpg" alt="숙소 외관(목적지)">
+      </div>
+
+      <p style="margin-top:10px;">
+        Google 지도에서 주소 “徳島県鳴門市里浦町里浦字花面７０４−２”를 검색하셔도 바로 안내받을 수 있습니다.
+      </p>
+      <iframe
+        src="https://www.google.com/maps?q=徳島県鳴門市里浦町里浦字花面７０４−２&output=embed"
+        style="width:100%;height:300px;border:0;border-radius:12px"
+        loading="lazy" allowfullscreen></iframe>
+    </section>
+
+    <!-- ==================== Parking ==================== -->
+    <section id="parking" class="card">
+      <h2 class="section-title">주차장 이용 안내</h2>
+      <p>반드시 지정된 구역에만 주차해 주세요.<br><strong>심야·이른 아침에 입·출차 시에는 소음을 최소화해 주시면 감사하겠습니다.</strong></p>
+      <ul class="list-tight">
+        <li><strong>주차 가능 대수: 2대</strong> (경차 등 소형 차량일 경우 최대 <strong>3대</strong>까지도 가능).</li>
+        <li><strong>표시된 라인 밖 주차 및 노상 주차는 금지</strong>입니다.</li>
+        <li>사진의 <strong>빨간색 표시 구역은 절대 주차 금지</strong>입니다. 호스트가 차고(garage)를 이용해야 할 수 있습니다.</li>
+      </ul>
+      <div class="grid grid-cols-2">
+        <figure>
+          <img src="./assets/parking-allowed.jpg" alt="주차 가능 구역">
+          <figcaption class="muted" style="margin-top:6px;">흰색 원 안쪽이 주차 가능 구역입니다.</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/parking-no.jpg" alt="주차 금지 구역">
+          <figcaption class="muted" style="margin-top:6px;">차고 앞 빨간 사각형 부분은 주차 금지입니다.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ==================== Check-in ==================== -->
+    <section id="checkin" class="card">
+      <h2 class="section-title">체크인 방법 (키패드 스마트 도어락)</h2>
+      <div class="grid grid-cols-2">
+        <div>
+          <ol class="steps">
+            <li>외부 현관 옆에 있는 <strong>숫자 키패드 스마트 도어락</strong>을 확인합니다.</li>
+            <li>체크인 전날에 안내드리는 <strong>6자리 비밀번호</strong>를 입력합니다.</li>
+            <li>입력 후 <strong>✓ 버튼</strong>을 누르면 문이 열립니다.</li>
+          </ol>
+          <ul class="list-tight">
+            <li><strong>외부·내부 현관은 연동</strong>되어 있어, 외부 현관이 열리면 내부 현관도 함께 해제됩니다.</li>
+            <li>약 <strong>2분 후 자동 잠금</strong>이 됩니다. 외출 시에는 다시 한 번 잠금 상태를 확인해 주세요.</li>
+          </ul>
+          <p class="warn"><strong>문이 열리지 않거나 기기 오류가 발생한 경우:</strong> 호스트에게 즉시 연락해 주세요. TEL: <a href="tel:08053128677">080-5312-8677</a></p>
+        </div>
+        <div>
+          <img src="./assets/checkin-keypad.png" alt="스마트 도어락 외관">
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== House Rules ==================== -->
+    <section id="rules" class="card">
+      <h2 class="section-title">🇯🇵 하우스 룰 (Fitaire in Naruto)</h2>
+
+      <h3 class="sub">1. 체크인 / 체크아웃</h3>
+      <ul class="list-tight">
+        <li>체크인: <strong>15:00 이후</strong></li>
+        <li>체크아웃: <strong>11:00까지</strong></li>
+      </ul>
+
+      <h3 class="sub">2. 실내 이용에 관한 안내</h3>
+      <ul class="list-tight">
+        <li>현관에서 신발을 벗고 실내 슬리퍼로 갈아 신어 주세요.</li>
+        <li>투숙 중에는 이웃 주민을 배려해 주시고, 특히 <strong>22:00 이후에는</strong> 대화 소리 및 TV·음악 볼륨을 낮춰 주세요.</li>
+        <li>가구·비품·설비는 소중히 다뤄 주세요. <strong>파손이나 구토 등으로 심하게 오염된 경우, 실제 청소·수리 비용을 청구드릴 수 있습니다.</strong></li>
+      </ul>
+
+      <h3 class="sub">3. 금지 사항</h3>
+      <ul class="list-tight">
+        <li>실내 및 베란다에서는 <strong>원칙적으로 금연</strong>입니다.</li>
+        <li class="note">흡연 시에는 <strong>야외에서만</strong> 부탁드리며, 휴대용 재떨이를 사용하시고 완전히 불을 끄신 후 처리해 주세요.</li>
+        <li>사전 허가 없이 <strong>반려동물 동반은 불가</strong>합니다.</li>
+        <li>예약 인원 외의 출입·숙박, 파티·이벤트 등의 사용은 금지입니다.</li>
+        <li><strong>예약 인원을 초과한 숙박은 허용되지 않습니다.</strong></li>
+      </ul>
+
+      <h3 class="sub">4. 설비·공용 공간 이용</h3>
+      <ul class="list-tight">
+        <li>주방, 조리도구, 식기류 사용 후에는 세척 후 원래 위치에 정리해 주세요.</li>
+        <li>쓰레기는 <strong>가연성·불연성·페트병을 한 그룹으로</strong>, <strong>병과 캔은 분리</strong>하여 지정된 쓰레기통에 버려 주세요.</li>
+        <li>외출 시에는 <strong>조명·에어컨·바닥난방·TV 등 전원을 끄고</strong>, 창문과 문이 잘 잠겼는지 확인해 주세요.</li>
+      </ul>
+
+      <h3 class="sub">5. 기타 안내</h3>
+      <ul class="list-tight">
+        <li><strong>차고(garage) 구역</strong>은 호스트의 물품 보관용 공간으로, 필요 시 드나들 수 있습니다. 다만 게스트가 사용하는 실내 공간이나 정원에는 들어가지 않습니다.</li>
+      </ul>
+
+      <p style="margin-top:8px;"><strong>11:00 이후 체크아웃 시 추가 요금이 발생할 수 있습니다.</strong></p>
+    </section>
+
+    <!-- ==================== Long Stay ==================== -->
+    <section id="longstay" class="card">
+      <h2 class="section-title">장기 투숙객 안내</h2>
+      <ul class="list-tight">
+        <li>투숙 기간 중 <strong>중간 객실 청소는 제공되지 않습니다.</strong> 필요 시 <strong>내부 현관 옆 슬리퍼 선반 아래의 청소기</strong>를 자유롭게 사용하실 수 있습니다.</li>
+        <li><strong>침구·타월 등의 리넨 교체는 실시하지 않습니다.</strong></li>
+        <li>세탁이 필요하시면 객실 내 <strong>세탁기와 세제</strong>를 사용하시거나, 인근 코인 세탁소를 이용해 주세요.</li>
+        <li>실내 쓰레기통이 가득 찼을 경우, 싱크대 아래에 준비된 여분 봉투로 교체해 주세요.</li>
+      </ul>
+
+      <h3 class="sub">인근 코인 세탁소</h3>
+      <ul class="list-tight">
+        <li><strong>코인 런드리 신센조 Power City점</strong><br>
+          도쿠시마현 나루토시 무야초 오오쿠와지마 니비키와하마 4-1 / 영업시간: 5:00–22:00</li>
+        <li><strong>코인 런드리 Avance Hello’s 나루토점</strong><br>
+          도쿠시마현 나루토시 오오츠초 요시나가 438-1 / 영업시간: 24시간</li>
+        <li><strong>우치노우미 코인 런드리 타테이와점</strong><br>
+          도쿠시마현 나루토시 무야초 타테이와 시치마이 142 / 영업시간: 6:00–22:00</li>
+      </ul>
+
+      <h3 class="sub">기타 안내</h3>
+      <ul class="list-tight">
+        <li>휴지, 티슈, 세제 등 소모품은 <strong>숙박 일수에 맞게</strong> 준비해 두었습니다.</li>
+        <li>가전·설비에 이상이 있을 경우, 직접 수리하지 마시고 호스트에게 연락해 주세요.</li>
+      </ul>
+    </section>
+
+    <!-- ==================== WEBER Grill ==================== -->
+    <section id="weber" class="card">
+      <h2 class="section-title">WEBER Traveler 가스 그릴 사용 방법</h2>
+      <p class="muted">그릴은 이미 펼쳐진 상태로 세팅되어 있습니다. <strong>반드시 실외에서만 사용해 주세요.</strong></p>
+
+      <h3 class="sub">가스 캔 보관 위치</h3>
+      <p>가스 캔은 실내의 <strong>지정된 수납 위치</strong>에 보관되어 있습니다. 사용 시에만 밖으로 가져가 사용 후 다시 제자리로 돌려 놓아 주세요.</p>
+      <img src="./assets/gas.jpg" alt="가스 캔 보관 위치">
+
+      <h3 class="sub">연료 및 안전 주의사항</h3>
+      <ul class="list-tight">
+        <li>사용 연료: <strong>EN417 규격 나사식 가스 캔 (약 470 g)</strong></li>
+        <li>주변 60cm 이내에는 인화성 물질을 두지 마세요.</li>
+        <li><strong>통풍이 잘 되는 실외</strong>에서만 사용하시고, 화기가 켜진 상태에서는 그릴을 이동시키지 마세요.</li>
+      </ul>
+
+      <!-- ①② -->
+      <section class="card" style="margin:12px 0;">
+        <div class="grid grid-cols-2">
+          <div>
+            <h3 class="sub">1. 사용 전 준비 (가스 연결)</h3>
+            <ol class="list-tight">
+              <li>조절 노브가 <strong>“OFF”</strong>에 있는지, 레귤레이터 밸브가 <strong>닫힘</strong> 상태인지 확인합니다.</li>
+              <li>가스 캔을 레귤레이터에 <strong>손으로 돌려 끼워</strong> 고정합니다 (공구 사용 금지).</li>
+              <li>레귤레이터 밸브를 <strong>열고</strong>, 연결 부위에 <strong>비눗물을 발라</strong> 기포가 생기지 않는지 확인합니다.</li>
+            </ol>
+            <p class="small">기포가 생기면 가스가 새고 있는 것입니다. 즉시 밸브를 닫고 다시 연결해 보시고, 개선되지 않으면 사용을 중지해 주세요.</p>
+          </div>
+          <div>
+            <h3 class="sub">2. 예열</h3>
+            <ol class="list-tight">
+              <li>뚜껑을 열고 다음 단계에 따라 점화합니다.</li>
+              <li>뚜껑을 닫고 <strong>“High”</strong>로 설정한 후 <strong>10–15분</strong> 정도 예열합니다 (온도계 약 260℃가 기준).</li>
+              <li>예열 후 <strong>스테인리스 브러시</strong>로 그릴을 가볍게 브러싱합니다.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ③④ -->
+      <section class="card" style="margin:12px 0;">
+        <div class="grid grid-cols-2">
+          <div>
+            <h3 class="sub">3. 점화 절차</h3>
+            <ol class="list-tight">
+              <li>뚜껑을 <strong>연 상태</strong>로 둡니다.</li>
+              <li>조절 노브가 <strong>“OFF”</strong>인지 다시 확인합니다.</li>
+              <li>레귤레이터 밸브를 <strong>엽니다</strong>.</li>
+              <li>노브를 <strong>누르면서 반시계 방향</strong>으로 돌려 <strong>“Start/High”</strong> 위치에 맞춥니다.</li>
+              <li><strong>빨간 점화 버튼</strong>을 여러 번 눌러(‘딸깍’ 소리) 불을 붙입니다.</li>
+              <li>불꽃이 보이지 않거나 5초 이내에 점화되지 않으면, 노브를 <strong>OFF</strong>로 돌리고 5분간 환기한 뒤 다시 시도해 주세요.</li>
+            </ol>
+            <p class="small">여러 번 시도해도 점화되지 않을 경우, 설명서의 성냥 점화 방법 또는 트러블슈팅을 참고하시고, 불안할 경우 사용을 중단해 주세요.</p>
+          </div>
+          <div>
+            <h3 class="sub">4. 소화 및 정리</h3>
+            <ol class="list-tight">
+              <li>조절 노브를 <strong>“OFF”</strong>로 돌립니다.</li>
+              <li>레귤레이터 밸브를 <strong>닫습니다</strong>.</li>
+              <li>그릴이 완전히 식은 후, <strong>드립 팬의 기름 양을 확인하고 필요 시 교체·청소</strong>해 주세요.</li>
+              <li>장기간 보관 또는 이동 시에는 <strong>가스 캔을 분리</strong>하여 실외에 보관해 주세요.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <h3 class="sub">관리·청소</h3>
+      <p>사용 후에는 그릴을 잠시 가열한 뒤 <strong>브러시로 그릴 표면을 가볍게 문지르고</strong>, <strong>드립 팬</strong>의 기름을 확인하여 과도한 기름은 버려 주세요.</p>
+
+      <p class="note">
+        📄 보다 자세한 내용은 공식 사용 설명서(PDF)를 참고해 주세요.<br>
+        <a href="https://content-images.weber.com/downloads/User-Guides/Owners/76638_Traveler-%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8.pdf" target="_blank" rel="noopener">
+          WEBER Traveler 사용 설명서 (PDF)
+        </a>
+      </p>
+    </section>
+
+    <!-- ==================== Area Guide ==================== -->
+    <section id="around" class="card">
+      <h2 class="section-title">주변 관광·맛집 안내</h2>
+
+      <h3 class="sub">🚗 1. 주요 관광지</h3>
+      <ul class="list-tight">
+        <li><strong>나루토 소용돌이(오나루토 대교)</strong> – 차로 약 10분. 세계 최대급 소용돌이, 관광선 탑승 추천.</li>
+        <li><strong>오쓰카 국제미술관</strong> – 약 15분. 세라믹 명화로 유명한 세계적 미술관.</li>
+        <li><strong>나루토 공원·Eddy 관광 물산관</strong> – 약 10분. 전망대에서 절경을 감상하고 특산품을 쇼핑할 수 있습니다.</li>
+        <li><strong>나루토 우치노우미 종합공원</strong> – 약 8분. 잔디밭과 놀이시설이 있어 가족 여행에 인기.</li>
+        <li><strong>도로 휴게소 우즈시오</strong> – 약 20분. 절경과 함께 지역 햄버거가 유명합니다.</li>
+        <li><strong>아와오도리 회관(도쿠시마 시내)</strong> – 약 40분. 1년 내내 아와오도리 공연과 체험 가능.</li>
+        <li><strong>아스타무랜드 도쿠시마</strong> – 약 45분. 과학 체험형 테마파크로 아이들에게 인기.</li>
+        <li><strong>이야 카즈라바시</strong> – 약 1시간 50분. 전통 덩굴 다리로 스릴 넘치는 명소.</li>
+        <li><strong>도로 휴게소 쿠루쿠루 나루토</strong> – 약 12분. 현지 농산물과 특산품을 판매.</li>
+        <li><strong>아이사이 광장(아이즈미초)</strong> – 약 35분. 도쿠시마 최대급 농산물 직판장.</li>
+        <li><strong>자로히레 아웃도어 리조트(아와지섬)</strong> – 약 50분. 낚시, 돌고래 체험 등 다양한 액티비티.</li>
+      </ul>
+
+      <h3 class="sub">🍜 2. 추천 맛집</h3>
+      <ul class="list-tight">
+        <li><strong>빈비야</strong> – 약 10분. 나루토 해산물 덮밥으로 유명, 줄이 길 수 있습니다.</li>
+        <li><strong>우즈노오카 레스토랑</strong> – 약 20분. 바다 전망과 아와지 양파 버거가 인기.</li>
+        <li><strong>나루토 지방 도매시장(시장 식당)</strong> – 약 8분. 아침 식사로도 좋은 해산물 식당.</li>
+        <li><strong>키사 아폴로</strong> – 약 7분. 수제 스콘이 인기 있는 레트로 카페.</li>
+        <li><strong>우나테츠</strong> – 약 10분. 나루토에서 유명한 장어 전문점.</li>
+        <li><strong>도노우라 나루토 본점</strong> – 약 10분. 도미 육수 라멘으로 유명, 연예인도 방문한 맛집.</li>
+        <li><strong>아라시</strong> – 약 12분. 현지 인기 정식집, 메뉴가 다양합니다.</li>
+        <li><strong>상하이요리 후후로</strong> – 약 10분. 본격 중화요리로 지역 평가가 좋습니다.</li>
+        <li><strong>스시 카츠</strong> – 약 10분. 나루토에서 손꼽히는 스시집, 예약 추천.</li>
+        <li><strong>산파치 라멘</strong> – 여러 지점이 있는 도쿠시마 라멘 체인.</li>
+        <li><strong>Ristorante Fishbone</strong> – 약 15분. 바다 전망의 이탈리안 레스토랑으로 기념일·런치에 좋습니다.</li>
+      </ul>
+
+      <h3 class="sub">🚙 3. 교통·이동 수단</h3>
+      <ul class="list-tight">
+        <li>렌터카: <strong>나루토역, 도쿠시마 공항</strong> 주변에 여러 렌터카 업체(토요타, 닛산, 니코니코 등)가 있습니다.</li>
+        <li>택시: <strong>나루토 제일 택시 – 088-685-5555</strong></li>
+      </ul>
+
+      <h3 class="sub">🛍️ 4. 추천 기념품</h3>
+      <ul class="list-tight">
+        <li><strong>나루토 킨토키 고구마 스위츠</strong> (쿠리오 상점 등)</li>
+        <li><strong>나루토 와카메</strong> (현지 해초)</li>
+        <li><strong>오타니야키 도자기</strong> (도예 체험도 가능)</li>
+        <li><strong>나루토 도미·스다치(유자 종류) 가공품</strong></li>
+        <li><strong>코토라야 과자</strong> (나루토 킨토키와 와카메를 사용한 화과자가 인기)</li>
+      </ul>
+
+      <h3 class="sub">🌸 5. 계절별 이벤트</h3>
+      <ul class="list-tight">
+        <li><strong>봄 (3–5월)</strong> – 나루토 소용돌이가 가장 박력 있는 시즌.</li>
+        <li><strong>여름 (7–8월)</strong> – 나루토시 납량 불꽃축제 (우치노우미에서 개최).</li>
+        <li><strong>가을 (9–11월)</strong> – 나루토 킨토키 고구마 수확 체험.</li>
+        <li><strong>겨울 (12–2월)</strong> – 오나루토 대교 주변 일루미네이션.</li>
+      </ul>
+
+      <h3 class="sub">💬 6. 호스트의 한마디</h3>
+      <p>나루토는 자연, 예술, 미식이 모두 어우러진 매력적인 지역입니다. 머무시는 동안 천천히 시간을 보내시며, 마음에 드는 장소를 하나씩 찾아보시길 바랍니다.</p>
+
+      <h3 class="sub">📱 유용한 링크</h3>
+      <ul class="list-tight">
+        <li><a href="https://maps.google.com" target="_blank" rel="noopener">Google 지도 길찾기</a></li>
+        <li><a href="https://www.naruto-kankou.jp/" target="_blank" rel="noopener">나루토시 관광협회</a></li>
+        <li><a href="https://discovertokushima.net/" target="_blank" rel="noopener">도쿠시마 관광 정보 사이트</a></li>
+      </ul>
+    </section>
+
+    <!-- ==================== Checkout ==================== -->
+    <section id="checkout" class="card">
+      <h2 class="section-title">체크아웃 안내</h2>
+      <ul class="list-tight">
+        <li>체크아웃 시간은 <strong>11:00</strong>입니다. 이후 퇴실 시 추가 요금이 발생할 수 있습니다.</li>
+        <li><strong>WEBER 그릴</strong>을 사용하신 경우:
+          <ul class="list-tight">
+            <li>그릴의 음식 찌꺼기를 간단히 브러시로 제거하고, 드립 팬의 기름을 확인·정리해 주세요.</li>
+            <li>가스 밸브를 잠그고, 가스 캔을 분리하여 실내 지정 위치에 보관해 주세요.</li>
+          </ul>
+        </li>
+        <li>사용하신 <strong>식기·조리도구는 세척 후 제자리에 정리</strong>해 주세요.</li>
+        <li>모든 <strong>에어컨, 바닥난방, 조명, 전자기기</strong>의 전원을 꺼 주세요.</li>
+        <li>퇴실 전 <strong>창문과 문이 모두 닫히고 잠겨 있는지</strong> 마지막으로 확인해 주세요.</li>
+      </ul>
+      <p class="muted">퇴실 직전에 큰 파손이나 고장이 발견되면, 가능하다면 호스트에게 알려 주시면 다음 게스트를 위해 큰 도움이 됩니다.</p>
+    </section>
+
+    <!-- ==================== Contact ==================== -->
+    <section id="contact" class="card">
+      <h2 class="section-title">비상 연락처</h2>
+      <p class="pill">호스트: <a href="tel:08053128677">080-5312-8677</a></p>
+    </section>
+
+    <p class="footer">© Fitaire in Naruto</p>
+  </div>
+</body>
+</html>
