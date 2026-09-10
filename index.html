@@ -39,7 +39,7 @@
       const hex = await sha256Hex(pw);
       if(hex === storedHash){
         sessionStorage.setItem("guest_ok","1");
-        location.href = "./protected/";
+        location.href = "./protected/index.html";
       }else{
         msg.textContent = "パスワードが違います。";
       }
